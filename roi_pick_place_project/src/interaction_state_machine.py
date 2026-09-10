@@ -77,8 +77,8 @@ class InteractionStateMachine:
                 self._propose(frame_idx, "PICKING")
 
         elif self.state == "PICKING":
-            if not object_in_roi:
-                self._propose(frame_idx, "PICKED")
+            """if not object_in_roi:
+                self._propose(frame_idx, "PICKED")"""
             elif not hand_near_object:
                 # hand left without the object actually leaving the ROI — false start
                 self._propose(frame_idx, "IDLE")
