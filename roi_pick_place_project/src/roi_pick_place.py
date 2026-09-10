@@ -84,7 +84,7 @@ def parse_args():
 
     parser.add_argument(
         "--det-model",
-        default="yolo11l.pt",
+        default="yolo26l.pt",
         help="YOLO detection model"
     )
 

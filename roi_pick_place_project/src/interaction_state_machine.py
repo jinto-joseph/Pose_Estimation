@@ -90,10 +90,10 @@ class InteractionStateMachine:
         elif self.state == "PLACING":
             if not hand_near_object and object_in_roi and self._is_stationary():
                 self._propose(frame_idx, "PLACED")
-            elif not object_in_roi:
+            """elif not object_in_roi:
                 # picked back up / moved away again before settling
                 self._propose(frame_idx, "PICKED")
-
+"""
         elif self.state == "PLACED":
             if hand_near_object and object_in_roi:
                 self._propose(frame_idx, "PICKING")
