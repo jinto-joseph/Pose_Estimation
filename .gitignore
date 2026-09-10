@@ -1,0 +1,25 @@
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+
+# Generated project output
+output/
+*.log
+
+# Notebook checkpoints
+.ipynb_checkpoints/
